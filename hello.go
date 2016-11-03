@@ -25,7 +25,7 @@ func sned(){
         fmt.Printf(">")
         fmt.Scanf("%s",&msg)
         msg = msg+"\n"
-        conn, err := net.Dial("tcp", "localhost:"+os.Args[2])
+        conn, err := net.Dial("tcp", "192.168.100.125:"+os.Args[2])
         if err != nil {
             fmt.Printf("Dial error: %s\n", err)
             return
